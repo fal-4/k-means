@@ -8,7 +8,7 @@ def gen_data():
     return x,y
 def main():
     x,y = gen_data()
-    km = KMeans(3,x,y)
+    km = KMeans(4,x,y)
     km.run_kmeans()
     print('hi!')
     plt.scatter(x[:, 0], x[:, 1], c=km.assigned_centroid, cmap='viridis')
